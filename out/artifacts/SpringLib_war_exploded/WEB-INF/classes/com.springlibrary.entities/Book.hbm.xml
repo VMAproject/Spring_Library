@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+<class catalog="springlibrary" name="com.springlibrary.entities.Book" table="book">
+    <id name="id" type="java.lang.Long">
+        <column name="id"/>
+        <generator class="identity"/>
+    </id>
+    <many-to-one class="com.springlibrary.entities.Author" fetch="join" name="author" lazy="false">
+        <column name="author_id" not-null="true"/>
+    </many-to-one>
+    <many-to-one class="com.springlibrary.entities.Genre" fetch="join" name="genre" lazy="false">
+        <column name="genre_id" not-null="true"/>
+    </many-to-one>
+    <many-to-one class="com.springlibrary.entities.Publisher" fetch="join" name="publisher" lazy="false">
+        <column name="publisher_id" not-null="true"/>
+    </many-to-one>
+    <property name="name" type="string">
+        <column length="45" name="name" not-null="true"/>
+    </property>
+    <property name="content" type="binary">
+        <column name="content" not-null="true"/>
+    </property>
+    <property name="pageCount" type="java.lang.Integer">
+        <column name="page_count" not-null="true"/>
+    </property>
+    <property name="isbn" type="string">
+        <column length="100" name="isbn" not-null="true" unique="true"/>
+    </property>
+    <property name="publishYear" type="java.lang.Integer">
+        <column name="publish_year" not-null="true"/>
+    </property>
+    <property name="image" type="binary">
+        <column name="image" not-null="true"/>
+    </property>
+    <property name="descr" type="string">
+        <column length="5000" name="descr"/>
+    </property>
+    <property name="rating" type="java.lang.Integer">
+        <column name="rating"/>
+    </property>
+    <property name="voteCount" type="java.lang.Long">
+        <column name="vote_count"/>
+    </property>
+</class>
+</hibernate-mapping>
