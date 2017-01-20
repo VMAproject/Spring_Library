@@ -7,7 +7,7 @@
 		http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-3.2.xsd">
 
 
-	<mvc:view-controller path="/login" />
+    <mvc:view-controller path="/login"/>
 
 
 </beans>

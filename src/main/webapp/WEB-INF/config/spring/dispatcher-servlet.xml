@@ -5,7 +5,7 @@
        xmlns:context="http://www.springframework.org/schema/context" xmlns:tx="http://www.springframework.org/schema/tx"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
        http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd"
-        >
+>
 
     <import resource="webflow.xml"/>
     <import resource="controllers.xml"/>
@@ -38,7 +38,7 @@
     </bean>
 
 
-        <bean class="org.springframework.web.servlet.view.UrlBasedViewResolver">
+    <bean class="org.springframework.web.servlet.view.UrlBasedViewResolver">
         <property name="viewClass" value="org.springframework.faces.mvc.JsfView"/>
         <property name="prefix" value="/WEB-INF/views/"/>
         <property name="suffix" value=".xhtml"/>
@@ -71,7 +71,6 @@
     </bean>
 
 
-
     <tx:annotation-driven/>
     <bean id="transactionManager"
           class="org.springframework.orm.hibernate4.HibernateTransactionManager">
@@ -92,10 +91,6 @@
             </bean>
         </mvc:interceptor>
     </mvc:interceptors>
-
-
-
-
 
 
 </beans>

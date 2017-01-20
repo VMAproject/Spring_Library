@@ -10,13 +10,12 @@
         ">
 
     <flow-registry id="flowRegistry" flow-builder-services="flowBuilderServices" base-path="/WEB-INF/flows">
-        <flow-location-pattern value="../flows/main.xml" />
+        <flow-location-pattern value="../flows/main.xml"/>
     </flow-registry>
 
-    <faces:flow-builder-services id="flowBuilderServices" development="true" />
+    <faces:flow-builder-services id="flowBuilderServices" development="true"/>
 
     <beans:bean id="facesContextListener" class="org.springframework.faces.webflow.FlowFacesContextLifecycleListener"/>
-
 
 
     <flow-executor id="flowExecutor">
@@ -24,7 +23,6 @@
             <listener ref="facesContextListener"/>
         </flow-execution-listeners>
     </flow-executor>
-
 
 
 </beans:beans>

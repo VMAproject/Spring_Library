@@ -10,7 +10,7 @@ import com.springlibrary.dao.interfaces.GenreDAO;
 import java.util.List;
 
 @Component
-public class GenreDAOImpl implements GenreDAO{
+public class GenreDAOImpl implements GenreDAO {
 
     @Autowired
     private SessionFactory sessionFactory;

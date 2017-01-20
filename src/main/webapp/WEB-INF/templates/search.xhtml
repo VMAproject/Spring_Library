@@ -1,5 +1,6 @@
 <?xml version='1.0' encoding='UTF-8' ?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:h="http://java.sun.com/jsf/html"
       xmlns:ui="http://java.sun.com/jsf/facelets"
@@ -20,7 +21,7 @@
                 <input type="submit" class="button-text"></input>
 
 
-                <h:inputText  id="search_string" styleClass="search-text" value="#{searchCriteria.text}"/>
+                <h:inputText id="search_string" styleClass="search-text" value="#{searchCriteria.text}"/>
 
                 <p:commandButton id="btnSearch" value="#{msg.search}" styleClass="button" action="searchByText">
                     <p:ajax execute="@form" render=":booksForm:booksList"/>
@@ -28,12 +29,12 @@
 
                 <div class="dropdown">
                     <h:selectOneMenu id="search_select" styleClass="select_search" value="#{searchCriteria.searchType}">
-                        <f:selectItems value="${utils.searchTypeList}" />
+                        <f:selectItems value="${utils.searchTypeList}"/>
                     </h:selectOneMenu>
                 </div>
 
                 <script language="javascript" type="">
-                    document.getElementById("search_form:search_string").setAttribute("placeholder","#{msg.search_book}");
+                    document.getElementById("search_form:search_string").setAttribute("placeholder", "#{msg.search_book}");
                 </script>
 
             </h:form>

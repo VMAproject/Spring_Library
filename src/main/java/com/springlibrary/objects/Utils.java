@@ -19,7 +19,6 @@ public class Utils {
     private String searchString;
 
 
-
     @Autowired
     private MessageSource msg;
 

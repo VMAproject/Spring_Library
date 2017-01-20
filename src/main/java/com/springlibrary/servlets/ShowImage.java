@@ -12,7 +12,7 @@ import java.io.IOException;
 import java.io.OutputStream;
 
 @WebServlet(name = "ShowImage",
-urlPatterns = {"/ShowImage"})
+        urlPatterns = {"/ShowImage"})
 public class ShowImage extends HttpServlet {
 
 
@@ -21,10 +21,10 @@ public class ShowImage extends HttpServlet {
      * <code>GET</code> and
      * <code>POST</code> methods.
      *
-     * @param request servlet request
+     * @param request  servlet request
      * @param response servlet response
      * @throws javax.servlet.ServletException if a servlet-specific error occurs
-     * @throws java.io.IOException if an I/O error occurs
+     * @throws java.io.IOException            if an I/O error occurs
      */
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
@@ -53,10 +53,10 @@ public class ShowImage extends HttpServlet {
      * Handles the HTTP
      * <code>POST</code> method.
      *
-     * @param request servlet request
+     * @param request  servlet request
      * @param response servlet response
      * @throws javax.servlet.ServletException if a servlet-specific error occurs
-     * @throws java.io.IOException if an I/O error occurs
+     * @throws java.io.IOException            if an I/O error occurs
      */
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)

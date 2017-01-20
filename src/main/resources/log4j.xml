@@ -4,29 +4,29 @@
 
 
     <logger name="com.springlibrary">
-        <level value="info" />
+        <level value="info"/>
     </logger>
 
     <logger name="org.springframework.core">
-        <level value="info" />
+        <level value="info"/>
     </logger>
 
-	<logger name="org.springframework.beans">
-		<level value="info" />
-	</logger>
+    <logger name="org.springframework.beans">
+        <level value="info"/>
+    </logger>
 
-	<logger name="org.springframework.context">
-		<level value="info" />
-	</logger>
+    <logger name="org.springframework.context">
+        <level value="info"/>
+    </logger>
 
-	<logger name="org.springframework.web">
-		<level value="info" />
-	</logger>
+    <logger name="org.springframework.web">
+        <level value="info"/>
+    </logger>
 
-	<!-- Root Logger -->
-	<root>
-		<priority value="warn" />
-		<appender-ref ref="console" />
-	</root>
-	
+    <!-- Root Logger -->
+    <root>
+        <priority value="warn"/>
+        <appender-ref ref="console"/>
+    </root>
+
 </log4j:configuration>
