@@ -5,15 +5,15 @@
 
     <view-state id="main">
         <transition on="searchByLetter">
-            <evaluate expression="libraryFacade.searchBooksByLetter()" />
+            <evaluate expression="libraryFacade.searchBooksByLetter()"/>
         </transition>
 
         <transition on="searchByGenre">
-            <evaluate expression="libraryFacade.searchBooksByGenre()" />
+            <evaluate expression="libraryFacade.searchBooksByGenre()"/>
         </transition>
 
         <transition on="searchByText">
-            <evaluate expression="libraryFacade.searchBooksByText()" />
+            <evaluate expression="libraryFacade.searchBooksByText()"/>
         </transition>
 
     </view-state>

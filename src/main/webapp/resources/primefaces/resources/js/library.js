@@ -1,8 +1,8 @@
-function showProgress(){
-    
-  
-    btnUpdateBook.disabled=true;
+function showProgress() {
 
-    
+
+    btnUpdateBook.disabled = true;
+
+
 }
 
